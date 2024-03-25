@@ -68,6 +68,14 @@ public class TestAddToCartThenEmpty_TestNG {
         Assert.assertNotNull(viewCartPageObject.viewCart(), "There is no product in the cart!");
     }
 
+    @Test (priority = 5)
+    public void testEmptyCart(){
+        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        driver = searchPageObject.getDriver();
+        EmptyCartPageObject emptyCartPageObject = new EmptyCartPageObject(driver);
+        Assert.assertNotNull(emptyCartPageObject.emptyCart(), "Your cart is empty.");
+    }
+
     @AfterTest
     public void tearDown(){
         driver.quit();
