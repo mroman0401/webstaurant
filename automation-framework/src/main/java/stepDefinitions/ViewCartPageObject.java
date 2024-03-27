@@ -12,7 +12,7 @@
 
     public class ViewCartPageObject {
 
-        WebDriver driver = null;
+        private WebDriver driver;
         By viewCartJS = By.xpath("//div[12]/div/p/div[2]/div[2]/a[1]");
 
         By search_empty_button = By.xpath("//div[1]/div[1]/div/div[1]/div/button");

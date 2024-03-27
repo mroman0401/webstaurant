@@ -8,7 +8,7 @@
 
     public class SearchPageObject {
 
-        WebDriver driver = null;
+        private WebDriver driver;
         By textbox_search = By.cssSelector("[id=\"searchval\"]");
         By button_search = By.xpath("//button[@value='Search']");
 
@@ -16,11 +16,6 @@
 
         public SearchPageObject(WebDriver driver){
             this.driver = driver;
-        }
-
-        public WebDriver getDriver(){
-            WebDriver driver1 = SearchPageObject.this.driver;
-            return driver1;
         }
 
         public WebElement verifySearchTextBoxIsPresent(){

@@ -11,7 +11,7 @@
 
     public class EmptyCartPageObject {
 
-        WebDriver driver = null;
+        private WebDriver driver;
         By emptyCartButton = By.xpath("//div[1]/div[1]/div/div[1]/div/button");
 
         By emptyCartButtonConfirmation = By.xpath("//div[11]/div/div/div/footer/button[1]");
